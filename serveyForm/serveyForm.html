@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="serveyForm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<h1 id="title">Student Satisfaction Survey</h1>
+  <p id="description">Please share your feedback to help us improve!</p>
+
+  <form id="survey-form">
+    <h2>Student Information</h2>
+    <div class="info">
+        <label for="name" id="name-label">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <br>
+      <div class="info">
+        <label for="email" id="email-label">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="your_email@example.com" required>
+      </div><br>
+  
+<div class="info">
+    
+    <label id="number-label" for="age">Age?</label>
+        <input  type="number" id="age" name="age" min="1" max="24" placeholder="Enter your Age" required></input>
+
+</div><br>
+
+      <h2>Rate Our Service</h2>
+      <div >
+        <label class="rate"  for="number" id="rate-label">How likely are you to recommend us to a friend? (1 = Not Likely, 5 = Very Likely)</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" placeholder="Enter a number (1-5)" required>
+      </div>
+
+      <h2>Additional Feedback</h2>
+      <div class="info">
+        <label for="dropdown">Your Role::</label>
+        <select id="dropdown">
+            <option>Select Current role</option>
+            <option>Student</option>
+            <option>Full time job</option>
+            <option>Prefer Not to say</option>
+            <option>Other</option>
+         </select>  
+      </div><br>
+
+      <div>
+        <label class="rate" for="feedback-text">What did you like most about our service?</label>
+        <textarea id="feedback-text" name="feedback_text" rows="4" placeholder="Share your thoughts"></textarea>
+      </div><br>
+
+    </input>
+        <label class="rate">Shall we improve our service?</label>
+        <br>
+        <input value="Definitely" name="test" type="radio"  id="improve-radio1">Definitely</input>
+            <input value="Not Sure" name="test" type="radio" id="improve-radio2">Not Sure</input>
+        <input value="No need" name="test" type="radio" id="improve-radio3">No Need</input>
+      </div><br>
+
+
+    <br>
+    <h2>What is the best part  in freeCodeCamp for you?</h2>
+ <input value="Challenges" type="checkbox" id="checkbox2" name="feedback_options[]">Challenges (Feedback Choice)</input>
+<input value="Projects" type="checkbox" id="checkbox2" name="feedback_options[]">Projects (Feedback Choice)</input>
+<input value="Community" type="checkbox" id="checkbox3" name="feedback_options[]">Community (Feedback Choice)</input>
+<input value="Open Source" type="checkbox" id="checkbox4" name="feedback_options[]">Open Source (Feedback Choice)</input>
+<br><br>
+<button type="submit" id="submit">Submit Survey</button>
+
+    
+  </form>
+</body>
+
+</html>
